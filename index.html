@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenguajes Y Automatas</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #15cdc1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    
+    #formulario-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      width: 400px;
+      text-align: center;
+    }
+
+    
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    
+    #formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
+    label {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    
+    #entrada {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    
+    #salida {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      font-size: 16px;
+    }
+  </style>
+  <script src="./automata.js"></script>
+</head>
+<body>
+  <div id="formulario-container">
+    <h1>Evaluar Modelo de Laptops</h1>
+    <form id="formulario">
+      <label for="entrada">Ingresa la cadena:</label>
+      <input type="text" id="entrada" />
+      <input type="submit" value="Evaluar" />
+    </form>
+    <div id="salida"></div>
+  </div>
+</body>
+</html>
